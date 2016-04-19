@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <title>Epsilon 4.0</title>
+
+
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="left-sidebar">
+
+<!--Loding-->
+<div id="saveload">
+    <div id="state">
+        <div class="saveloading"></div>
+    </div>
+</div>
+<!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="header-logo" href="travel_main.html"></a>
+</div>
+
+<!-- Ball Footer Menu -->
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">
+            <div class="sidebar-header">
+                <div class="sidebar-header-logo">
+                    <div class="photo" id="profile-photoimage">
+                    </div>
+                    <div id="name">
+                        <p id="nameborder"></p>
+                    </div>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="sidebar-menu half-bottom">
+            </div>
+            <div class="sidebar-divider">
+                MENU
+            </div>
+            <div class="sidebar-menu">
+                <a class="menu-item" href="travel_main.html">
+                    <i class="bg-blue-dark fa fa-globe"></i>
+                    <em>Mis Viajes</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="contact-main.html">
+                    <i class="bg-green-dark fa fa-envelope-o"></i>
+                    <em>Contacto</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="suggestions.html">
+                    <i class="bg-magenta-dark fa fa-suitcase"></i>
+                    <em>Sugerencias</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="myprofile.html">
+                    <i class="google-color fa fa-user"></i>
+                    <em>Mi Perfil</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="index.html">
+                    <i class="bg-green-light fa fa-sign-out"></i>
+                    <em>Log Out</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="http://www.facebook.com">
+                    <i class="facebook-color fa fa-facebook"></i>
+                    <em>Facebook</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item" href="http://www.twitter.com">
+                    <i class="twitter-color fa fa-twitter"></i>
+                    <em>Twitter</em>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a class="menu-item close-sidebar" href="#">
+                    <i class="bg-red-dark fa fa-times"></i>
+                    <em>Close</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+            </div>
+        </div>
+        <!--Right Sidebar -->
+        <div class="snap-drawer snap-drawer-right">
+            <!--Disabled on contact page-->
+        </div>
+
+        <div id="content" class="snap-content contact-main">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <!--Page content goes here, fixed elements go above the all elements class-->
+                <div class="one-half-responsive">
+
+
+                    <div class="material-container full-bottom">
+                        <div class="contact-form no-bottom">
+                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                <fieldset>
+                                    <div id="contact-border">
+                                        <label id="contact_text" for="contactNameField">Contacto:</label>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField margin"
+                                               for="contactNameField">Tema:</label>
+                                        <select class="select-border" id="send_email">
+
+                                            <option value="info@texmar.com">Dudas</option>
+                                            <option value="support@texmar.com">Soporte</option>
+                                            <option value="info@texmar.com">Sugerencias</option>
+                                        </select>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField margin" for="contactEmailField">Titulo:
+                                        </label>
+                                        <input type="text" name="contactEmailField" value=""
+                                               class="contactField requiredField requiredEmailField textcell"
+                                               id="contactEmailField"/>
+                                    </div>
+                                    <div class="formTextareaWrap">
+                                        <label class="field-title contactMessageTextarea margin"
+                                               for="contactMessageTextarea">Mensage:
+                                        </label>
+                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField"
+                                                  id="contactMessageTextarea"></textarea>
+                                    </div>
+                                    <div >
+                                        <input type="button" class="button-green contactSubmitButton "
+                                              value="Enviar Mensage" id="message_button"
+                                               />
+                                    </div>
+
+                                    <div class="name_border">
+                                        <i class="agente_name" id="agente_name">Agente:</i>
+                                    </div>
+                                    <div >
+                                        <div>
+                                            <label id="telLabel">Teléfono:</label>
+                                           <a href="tel:+55554444" id="telenumber">55-55-44-44</a>
+                                            <!--  <a class="button icon-left ion-ios7-telephone button-calm button-outline" ng-href="tel: {{phoneno}}">Call (03) 9533 1100</a>-->
+                                        </div>
+                                        <div id="telephone">
+                                            <img src="images/callimage.png" alt="telimage" id="call">
+                                        </div>
+                                    </div>
+                                    <div class="email_border">
+                                        <i class="agente_name" id="email">Email:</i>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+    </div>
+</div>
+<!--Fly up share box and notifications go here -->
+<!--These are the only features that should be placed outside the all-elements class-->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework-plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/contact.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/rightside.js"></script>
+
+</body>
